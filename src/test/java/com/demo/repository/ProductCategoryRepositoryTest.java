@@ -23,10 +23,16 @@ public class ProductCategoryRepositoryTest {
 	
 	@Test
 	public void findOne(){
-		
 		ProductCategory productCategory = repository.findOne(1);
-		
-		
+		System.out.println(productCategory.toString());
+	}
+	
+	@Test
+	public void save(){
+		ProductCategory productCategory = new ProductCategory();
+		productCategory.setCategoryName("女生最爱");
+		productCategory.setCategoryType("3");
+		repository.save(productCategory);
 	}
 
 }
