@@ -1,0 +1,26 @@
+<div id="app">
+    <ul>
+        <li v-for="product in products">
+            {{product}}
+        </li>
+    </ul>
+</div>
+
+<script src="./vue.js"></script>
+
+<script>
+    var conts = new Vue({
+      el: '#app',
+      data:{
+        products:[]
+      },
+      created(){
+        fetch('http://localhost:8080/sell/buyer/product/list')
+            .then(response => {
+                return response.json()
+            }).then(res =>{
+                console.log(res)
+            })
+      }
+    })
+</script>

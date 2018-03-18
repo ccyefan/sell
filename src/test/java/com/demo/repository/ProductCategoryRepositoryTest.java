@@ -1,5 +1,11 @@
 package com.demo.repository;
 
+import java.util.Arrays;
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +25,7 @@ import com.demo.dataobject.ProductCategory;
 public class ProductCategoryRepositoryTest {
 	
 	@Autowired
-	private ProducCategoryRepository repository;
+	private ProductCategoryRepository repository;
 	
 	@Test
 	public void findOne(){
@@ -27,12 +33,27 @@ public class ProductCategoryRepositoryTest {
 		System.out.println(productCategory.toString());
 	}
 	
-	@Test
+//	@Test	
+	@Transactional
 	public void save(){
 		ProductCategory productCategory = new ProductCategory();
 		productCategory.setCategoryName("女生最爱");
-		productCategory.setCategoryType("5");
-		repository.save(productCategory);
+		productCategory.setCategoryType(9);
+		ProductCategory result = repository.save(productCategory);
+		Assert.assertNotNull(result);
 	}
 
+//	@Test
+	public void update(){
+		ProductCategory productCategory = repository.findOne(3);
+		productCategory.setCategoryName("男女不都爱");
+		repository.save(productCategory);
+	}
+	
+	@Test
+	public void findByCategoryType(){
+		List<Integer> list = Arrays.asList(3,4,5);
+		List<ProductCategory> restult = repository.findByCategoryTypeIn(list);
+		Assert.assertNotEquals(0, restult.size());
+	}
 }
