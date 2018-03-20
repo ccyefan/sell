@@ -6,10 +6,13 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import org.hibernate.annotations.DynamicUpdate;
+
 import com.demo.enums.OrderStatusEnum;
 import com.demo.enums.PayStatusEnum;
 
 @Entity
+@DynamicUpdate
 public class OrderMaster {
 	/**orderid */
 	@Id
@@ -29,7 +32,7 @@ public class OrderMaster {
 	/**支付状态， 默认为0未支付*/
 	private Integer payStatus = PayStatusEnum.WAIT.getCode();
 	/**创建时间 */
-	private Date createDate;
+	private Date createTime;
 	/**修改时间 */
 	private Date updateTime;
 	
@@ -84,12 +87,14 @@ public class OrderMaster {
 	public void setPayStatus(Integer payStatus) {
 		this.payStatus = payStatus;
 	}
-	public Date getCreateDate() {
-		return createDate;
+	public Date getCreateTime() {
+		return createTime;
 	}
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
 	}
+
 	public Date getUpdateTime() {
 		return updateTime;
 	}
