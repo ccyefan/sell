@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.demo.Service.ProductService;
 import com.demo.dataobject.ProductInfo;
+import com.demo.dto.CartDTO;
 import com.demo.enums.ProductStatusEnum;
 import com.demo.repository.ProductInfoRepository;
 
@@ -36,6 +37,18 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public ProductInfo save(ProductInfo productInfo) {
 		return productInfoRepository.save(productInfo);
+	}
+
+	@Override
+	public void increaseStock(List<CartDTO> cartDTOList) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void decreaseStock(List<CartDTO> cartDTOList) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
