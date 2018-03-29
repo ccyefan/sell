@@ -5494,3 +5494,735 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2018-03-23 18:02:46.250  INFO 12020 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
 2018-03-23 18:02:46.297  INFO 12020 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
 2018-03-23 18:02:46.301  INFO 12020 --- [main] com.demo.SellApplication                 : Started SellApplication in 4.118 seconds (JVM running for 4.411)
+2018-03-29 21:36:26.168  INFO 47788 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 47788 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 21:36:26.187  INFO 47788 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 21:36:26.274  INFO 47788 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:36:26 CST 2018]; root of context hierarchy
+2018-03-29 21:36:29.983  INFO 47788 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:36:30.003  INFO 47788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 21:36:30.142  INFO 47788 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 21:36:30.145  INFO 47788 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 21:36:30.148  INFO 47788 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 21:36:30.213  INFO 47788 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 21:36:30.425  INFO 47788 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 21:36:32.338  INFO 47788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:36:34.496  INFO 47788 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:36:26 CST 2018]; root of context hierarchy
+2018-03-29 21:36:34.858  INFO 47788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 21:36:34.863  INFO 47788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 21:36:34.864  INFO 47788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 21:36:34.931  INFO 47788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:36:34.931  INFO 47788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:36:35.008  INFO 47788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:36:35.065  INFO 47788 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 21:36:35.535  INFO 47788 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 9.994 seconds (JVM running for 11.529)
+2018-03-29 21:36:36.054  INFO 47788 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:36:26 CST 2018]; root of context hierarchy
+2018-03-29 21:36:36.071  INFO 47788 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:48:44.986  INFO 5912 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 5912 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 21:48:44.987  INFO 5912 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 21:48:45.065  INFO 5912 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:48:45 CST 2018]; root of context hierarchy
+2018-03-29 21:48:48.659  INFO 5912 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:48:48.677  INFO 5912 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 21:48:48.805  INFO 5912 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 21:48:48.807  INFO 5912 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 21:48:48.808  INFO 5912 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 21:48:48.873  INFO 5912 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 21:48:49.067  INFO 5912 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 21:48:50.211  INFO 5912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:48:51.713  INFO 5912 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:48:45 CST 2018]; root of context hierarchy
+2018-03-29 21:48:51.860  INFO 5912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 21:48:51.865  INFO 5912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 21:48:51.866  INFO 5912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 21:48:51.928  INFO 5912 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:48:51.929  INFO 5912 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:48:52.020  INFO 5912 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:48:52.067  INFO 5912 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 21:48:52.483  INFO 5912 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 8.056 seconds (JVM running for 9.098)
+2018-03-29 21:48:52.921  INFO 5912 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:48:45 CST 2018]; root of context hierarchy
+2018-03-29 21:48:52.931  INFO 5912 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:51:26.549  INFO 35788 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 35788 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 21:51:26.550  INFO 35788 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 21:51:26.668  INFO 35788 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:51:26 CST 2018]; root of context hierarchy
+2018-03-29 21:51:30.692  INFO 35788 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:51:30.729  INFO 35788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 21:51:30.879  INFO 35788 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 21:51:30.882  INFO 35788 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 21:51:30.885  INFO 35788 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 21:51:31.001  INFO 35788 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 21:51:31.223  INFO 35788 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 21:51:32.448  INFO 35788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:51:34.070  INFO 35788 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:51:26 CST 2018]; root of context hierarchy
+2018-03-29 21:51:34.215  INFO 35788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 21:51:34.244  INFO 35788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 21:51:34.245  INFO 35788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 21:51:34.311  INFO 35788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:51:34.312  INFO 35788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:51:34.397  INFO 35788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:51:34.442  INFO 35788 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 21:51:34.911  INFO 35788 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 9.024 seconds (JVM running for 10.117)
+2018-03-29 21:51:35.266  INFO 35788 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:51:26 CST 2018]; root of context hierarchy
+2018-03-29 21:51:35.290  INFO 35788 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:54:35.587  INFO 50484 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 50484 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 21:54:35.589  INFO 50484 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 21:54:35.675  INFO 50484 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:54:35 CST 2018]; root of context hierarchy
+2018-03-29 21:54:39.746  INFO 50484 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:54:39.777  INFO 50484 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 21:54:39.926  INFO 50484 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 21:54:39.929  INFO 50484 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 21:54:39.933  INFO 50484 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 21:54:39.997  INFO 50484 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 21:54:40.190  INFO 50484 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 21:54:41.337  INFO 50484 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 21:54:42.783  INFO 50484 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:54:35 CST 2018]; root of context hierarchy
+2018-03-29 21:54:42.927  INFO 50484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 21:54:42.931  INFO 50484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 21:54:42.932  INFO 50484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 21:54:43.000  INFO 50484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:54:43.001  INFO 50484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:54:43.089  INFO 50484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 21:54:43.145  INFO 50484 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 21:54:43.547  INFO 50484 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 8.565 seconds (JVM running for 9.6)
+2018-03-29 21:54:44.168  WARN 50484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1452, SQLState: 23000
+2018-03-29 21:54:44.168 ERROR 50484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot add or update a child row: a foreign key constraint fails (`sell`.`order_detail`, CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order_master` (`order_id`))
+2018-03-29 21:54:44.188  INFO 50484 --- [main] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2018-03-29 21:54:44.264  INFO 50484 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 21:54:35 CST 2018]; root of context hierarchy
+2018-03-29 21:54:44.299  INFO 50484 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:00:15.045  INFO 27816 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 27816 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 22:00:15.048  INFO 27816 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 22:00:15.146  INFO 27816 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:00:15 CST 2018]; root of context hierarchy
+2018-03-29 22:00:18.632  INFO 27816 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:00:18.653  INFO 27816 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 22:00:18.805  INFO 27816 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 22:00:18.811  INFO 27816 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 22:00:18.824  INFO 27816 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 22:00:18.919  INFO 27816 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 22:00:19.130  INFO 27816 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 22:00:20.235  INFO 27816 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:00:21.835  INFO 27816 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:00:15 CST 2018]; root of context hierarchy
+2018-03-29 22:00:21.972  INFO 27816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 22:00:21.976  INFO 27816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 22:00:21.977  INFO 27816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 22:00:22.036  INFO 27816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:00:22.037  INFO 27816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:00:22.130  INFO 27816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:00:22.183  INFO 27816 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 22:00:22.595  INFO 27816 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 8.156 seconds (JVM running for 9.412)
+2018-03-29 22:00:22.936  WARN 27816 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1452, SQLState: 23000
+2018-03-29 22:00:22.936 ERROR 27816 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot add or update a child row: a foreign key constraint fails (`sell`.`order_detail`, CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order_master` (`order_id`))
+2018-03-29 22:00:22.938  INFO 27816 --- [main] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2018-03-29 22:00:23.006  INFO 27816 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:00:15 CST 2018]; root of context hierarchy
+2018-03-29 22:00:23.020  INFO 27816 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:04:03.544  INFO 10676 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 10676 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 22:04:03.547  INFO 10676 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 22:04:03.606  INFO 10676 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:04:03 CST 2018]; root of context hierarchy
+2018-03-29 22:04:07.563  INFO 10676 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:04:07.582  INFO 10676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 22:04:07.739  INFO 10676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 22:04:07.745  INFO 10676 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 22:04:07.749  INFO 10676 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 22:04:07.833  INFO 10676 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 22:04:08.060  INFO 10676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 22:04:09.213  INFO 10676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:04:10.829  INFO 10676 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:04:03 CST 2018]; root of context hierarchy
+2018-03-29 22:04:10.960  INFO 10676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 22:04:10.965  INFO 10676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 22:04:10.967  INFO 10676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 22:04:11.031  INFO 10676 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:04:11.031  INFO 10676 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:04:11.103  INFO 10676 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:04:11.155  INFO 10676 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 22:04:11.584  INFO 10676 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 8.615 seconds (JVM running for 9.653)
+2018-03-29 22:04:12.112  WARN 10676 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2018-03-29 22:04:12.113 ERROR 10676 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'order_status' cannot be null
+2018-03-29 22:04:12.115  INFO 10676 --- [main] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2018-03-29 22:04:12.146  INFO 10676 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:04:03 CST 2018]; root of context hierarchy
+2018-03-29 22:04:12.165  INFO 10676 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:05:22.013  INFO 47572 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 47572 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 22:05:22.014  INFO 47572 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 22:05:22.098  INFO 47572 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:05:22 CST 2018]; root of context hierarchy
+2018-03-29 22:05:25.652  INFO 47572 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:05:25.676  INFO 47572 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 22:05:25.813  INFO 47572 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 22:05:25.816  INFO 47572 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 22:05:25.819  INFO 47572 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 22:05:25.881  INFO 47572 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 22:05:26.074  INFO 47572 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 22:05:27.133  INFO 47572 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:05:28.815  INFO 47572 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:05:22 CST 2018]; root of context hierarchy
+2018-03-29 22:05:28.967  INFO 47572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 22:05:28.972  INFO 47572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 22:05:28.973  INFO 47572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 22:05:29.044  INFO 47572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:05:29.045  INFO 47572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:05:29.151  INFO 47572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:05:29.208  INFO 47572 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 22:05:29.650  INFO 47572 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 8.252 seconds (JVM running for 9.255)
+2018-03-29 22:05:30.006  WARN 47572 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2018-03-29 22:05:30.007 ERROR 47572 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'pay_status' cannot be null
+2018-03-29 22:05:30.009  INFO 47572 --- [main] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2018-03-29 22:05:30.050  INFO 47572 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:05:22 CST 2018]; root of context hierarchy
+2018-03-29 22:05:30.065  INFO 47572 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:06:39.474  INFO 11152 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 11152 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 22:06:39.476  INFO 11152 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 22:06:39.546  INFO 11152 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:06:39 CST 2018]; root of context hierarchy
+2018-03-29 22:06:42.992  INFO 11152 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:06:43.021  INFO 11152 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 22:06:43.179  INFO 11152 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 22:06:43.185  INFO 11152 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 22:06:43.188  INFO 11152 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 22:06:43.275  INFO 11152 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 22:06:43.450  INFO 11152 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 22:06:44.542  INFO 11152 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:06:46.035  INFO 11152 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:06:39 CST 2018]; root of context hierarchy
+2018-03-29 22:06:46.159  INFO 11152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 22:06:46.165  INFO 11152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 22:06:46.166  INFO 11152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 22:06:46.225  INFO 11152 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:06:46.225  INFO 11152 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:06:46.313  INFO 11152 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:06:46.356  INFO 11152 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 22:06:46.781  INFO 11152 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.88 seconds (JVM running for 8.911)
+2018-03-29 22:06:47.411  INFO 11152 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:06:39 CST 2018]; root of context hierarchy
+2018-03-29 22:06:47.436  INFO 11152 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:21:33.509  INFO 19548 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 19548 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 22:21:33.510  INFO 19548 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 22:21:33.563  INFO 19548 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:21:33 CST 2018]; root of context hierarchy
+2018-03-29 22:21:37.169  INFO 19548 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:21:37.209  INFO 19548 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 22:21:37.379  INFO 19548 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 22:21:37.383  INFO 19548 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 22:21:37.386  INFO 19548 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 22:21:37.468  INFO 19548 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 22:21:37.653  INFO 19548 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 22:21:38.645  INFO 19548 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:21:40.052  INFO 19548 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:21:33 CST 2018]; root of context hierarchy
+2018-03-29 22:21:40.188  INFO 19548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 22:21:40.193  INFO 19548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 22:21:40.194  INFO 19548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 22:21:40.260  INFO 19548 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:21:40.261  INFO 19548 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:21:40.337  INFO 19548 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:21:40.394  INFO 19548 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 22:21:40.784  INFO 19548 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.757 seconds (JVM running for 8.81)
+2018-03-29 22:21:41.257  INFO 19548 --- [main] com.demo.LoggerTest                      : [创建订单] result = com.demo.dto.OrderDTO@60b616c8
+2018-03-29 22:21:41.276  INFO 19548 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:21:33 CST 2018]; root of context hierarchy
+2018-03-29 22:21:41.290  INFO 19548 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:28:03.119  INFO 50544 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 50544 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 22:28:03.121  INFO 50544 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 22:28:03.193  INFO 50544 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:28:03 CST 2018]; root of context hierarchy
+2018-03-29 22:28:06.489  INFO 50544 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:28:06.517  INFO 50544 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 22:28:06.685  INFO 50544 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 22:28:06.688  INFO 50544 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 22:28:06.691  INFO 50544 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 22:28:06.750  INFO 50544 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 22:28:06.934  INFO 50544 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 22:28:07.947  INFO 50544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:28:09.358  INFO 50544 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:28:03 CST 2018]; root of context hierarchy
+2018-03-29 22:28:09.485  INFO 50544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 22:28:09.491  INFO 50544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 22:28:09.491  INFO 50544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 22:28:09.551  INFO 50544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:28:09.551  INFO 50544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:28:09.624  INFO 50544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:28:09.668  INFO 50544 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 22:28:10.021  INFO 50544 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.377 seconds (JVM running for 8.324)
+2018-03-29 22:28:10.386  WARN 50544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1452, SQLState: 23000
+2018-03-29 22:28:10.386 ERROR 50544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot add or update a child row: a foreign key constraint fails (`sell`.`order_detail`, CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order_master` (`order_id`))
+2018-03-29 22:28:10.390  INFO 50544 --- [main] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2018-03-29 22:28:10.544  INFO 50544 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:28:03 CST 2018]; root of context hierarchy
+2018-03-29 22:28:10.558  INFO 50544 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:55:40.861  INFO 24772 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 24772 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 22:55:40.863  INFO 24772 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 22:55:40.937  INFO 24772 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:55:40 CST 2018]; root of context hierarchy
+2018-03-29 22:55:44.507  INFO 24772 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:55:44.528  INFO 24772 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 22:55:44.706  INFO 24772 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 22:55:44.708  INFO 24772 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 22:55:44.710  INFO 24772 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 22:55:44.767  INFO 24772 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 22:55:44.959  INFO 24772 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 22:55:45.956  INFO 24772 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:55:47.314  INFO 24772 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:55:40 CST 2018]; root of context hierarchy
+2018-03-29 22:55:47.435  INFO 24772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 22:55:47.440  INFO 24772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 22:55:47.441  INFO 24772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 22:55:47.493  INFO 24772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:55:47.494  INFO 24772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:55:47.566  INFO 24772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:55:47.610  INFO 24772 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 22:55:47.995  INFO 24772 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.622 seconds (JVM running for 8.648)
+2018-03-29 22:55:48.427  INFO 24772 --- [main] com.demo.LoggerTest                      : [创建订单] result = com.demo.dto.OrderDTO@55222ee9
+2018-03-29 22:55:48.437  INFO 24772 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:55:40 CST 2018]; root of context hierarchy
+2018-03-29 22:55:48.449  INFO 24772 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:58:33.101  INFO 15880 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 15880 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 22:58:33.102  INFO 15880 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 22:58:33.187  INFO 15880 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:58:33 CST 2018]; root of context hierarchy
+2018-03-29 22:58:36.670  INFO 15880 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:58:36.698  INFO 15880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 22:58:36.800  INFO 15880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 22:58:36.802  INFO 15880 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 22:58:36.804  INFO 15880 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 22:58:36.860  INFO 15880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 22:58:37.053  INFO 15880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 22:58:38.077  INFO 15880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:58:39.501  INFO 15880 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:58:33 CST 2018]; root of context hierarchy
+2018-03-29 22:58:39.622  INFO 15880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 22:58:39.626  INFO 15880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 22:58:39.627  INFO 15880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 22:58:39.676  INFO 15880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:58:39.677  INFO 15880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:58:39.753  INFO 15880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:58:39.813  INFO 15880 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 22:58:40.175  INFO 15880 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.654 seconds (JVM running for 8.689)
+2018-03-29 22:58:40.461  INFO 15880 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:58:33 CST 2018]; root of context hierarchy
+2018-03-29 22:58:40.472  INFO 15880 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:59:25.210  INFO 11008 --- [main] c.d.Service.impl.ProductServiceImplTest  : Starting ProductServiceImplTest on DESKTOP-72CNDS6 with PID 11008 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 22:59:25.212  INFO 11008 --- [main] c.d.Service.impl.ProductServiceImplTest  : No active profile set, falling back to default profiles: default
+2018-03-29 22:59:25.282  INFO 11008 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Thu Mar 29 22:59:25 CST 2018]; root of context hierarchy
+2018-03-29 22:59:28.395  INFO 11008 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:59:28.414  INFO 11008 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 22:59:28.535  INFO 11008 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 22:59:28.538  INFO 11008 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 22:59:28.540  INFO 11008 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 22:59:28.600  INFO 11008 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 22:59:28.812  INFO 11008 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 22:59:29.894  INFO 11008 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:59:31.199  INFO 11008 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Thu Mar 29 22:59:25 CST 2018]; root of context hierarchy
+2018-03-29 22:59:31.308  INFO 11008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 22:59:31.313  INFO 11008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 22:59:31.314  INFO 11008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 22:59:31.365  INFO 11008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:59:31.365  INFO 11008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:59:31.441  INFO 11008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:59:31.473  INFO 11008 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 22:59:31.815  INFO 11008 --- [main] c.d.Service.impl.ProductServiceImplTest  : Started ProductServiceImplTest in 7.142 seconds (JVM running for 8.109)
+2018-03-29 22:59:32.263  INFO 11008 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Thu Mar 29 22:59:25 CST 2018]; root of context hierarchy
+2018-03-29 22:59:32.272  INFO 11008 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:59:52.337  INFO 30880 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 30880 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 22:59:52.339  INFO 30880 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 22:59:52.408  INFO 30880 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:59:52 CST 2018]; root of context hierarchy
+2018-03-29 22:59:55.705  INFO 30880 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:59:55.725  INFO 30880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 22:59:55.848  INFO 30880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 22:59:55.850  INFO 30880 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 22:59:55.852  INFO 30880 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 22:59:55.909  INFO 30880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 22:59:56.092  INFO 30880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 22:59:57.060  INFO 30880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 22:59:58.406  INFO 30880 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:59:52 CST 2018]; root of context hierarchy
+2018-03-29 22:59:58.522  INFO 30880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 22:59:58.526  INFO 30880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 22:59:58.527  INFO 30880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 22:59:58.582  INFO 30880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:59:58.582  INFO 30880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:59:58.656  INFO 30880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 22:59:58.704  INFO 30880 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 22:59:59.046  INFO 30880 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.223 seconds (JVM running for 8.132)
+2018-03-29 22:59:59.484  INFO 30880 --- [main] com.demo.LoggerTest                      : [创建订单] result = com.demo.dto.OrderDTO@3181d4de
+2018-03-29 22:59:59.492  INFO 30880 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 22:59:52 CST 2018]; root of context hierarchy
+2018-03-29 22:59:59.504  INFO 30880 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:03:49.817  INFO 33644 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 33644 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 23:03:49.818  INFO 33644 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 23:03:49.877  INFO 33644 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:03:49 CST 2018]; root of context hierarchy
+2018-03-29 23:03:53.074  INFO 33644 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:03:53.095  INFO 33644 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 23:03:53.199  INFO 33644 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 23:03:53.201  INFO 33644 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 23:03:53.203  INFO 33644 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 23:03:53.253  INFO 33644 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 23:03:53.413  INFO 33644 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 23:03:54.533  INFO 33644 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:03:56.036  INFO 33644 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:03:49 CST 2018]; root of context hierarchy
+2018-03-29 23:03:56.151  INFO 33644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 23:03:56.156  INFO 33644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 23:03:56.157  INFO 33644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 23:03:56.203  INFO 33644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:03:56.204  INFO 33644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:03:56.280  INFO 33644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:03:56.323  INFO 33644 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 23:03:56.653  INFO 33644 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.318 seconds (JVM running for 8.321)
+2018-03-29 23:03:57.122  INFO 33644 --- [main] com.demo.LoggerTest                      : [创建订单] result = com.demo.dto.OrderDTO@2b01c689
+2018-03-29 23:03:57.131  INFO 33644 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:03:49 CST 2018]; root of context hierarchy
+2018-03-29 23:03:57.142  INFO 33644 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:05:39.299  INFO 46592 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 46592 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 23:05:39.302  INFO 46592 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 23:05:39.382  INFO 46592 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e7b159b: startup date [Thu Mar 29 23:05:39 CST 2018]; root of context hierarchy
+2018-03-29 23:05:43.037  INFO 46592 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:05:43.061  INFO 46592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 23:05:43.214  INFO 46592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 23:05:43.217  INFO 46592 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 23:05:43.219  INFO 46592 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 23:05:43.332  INFO 46592 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 23:05:43.584  INFO 46592 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 23:05:44.859  INFO 46592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:05:50.986  INFO 46592 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7e7b159b: startup date [Thu Mar 29 23:05:39 CST 2018]; root of context hierarchy
+2018-03-29 23:05:51.132  INFO 46592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 23:05:51.137  INFO 46592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 23:05:51.138  INFO 46592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 23:05:51.219  INFO 46592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:05:51.219  INFO 46592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:05:51.316  INFO 46592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:05:51.366  INFO 46592 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 23:05:52.014  INFO 46592 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 13.274 seconds (JVM running for 14.726)
+2018-03-29 23:07:08.319  INFO 46592 --- [main] com.demo.LoggerTest                      : [创建订单] result = com.demo.dto.OrderDTO@40b01718
+2018-03-29 23:07:08.329  INFO 46592 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7e7b159b: startup date [Thu Mar 29 23:05:39 CST 2018]; root of context hierarchy
+2018-03-29 23:07:08.337  INFO 46592 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:08:26.605  INFO 14176 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 14176 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 23:08:26.608  INFO 14176 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 23:08:26.678  INFO 14176 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:08:26 CST 2018]; root of context hierarchy
+2018-03-29 23:08:29.968  INFO 14176 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:08:29.989  INFO 14176 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 23:08:30.119  INFO 14176 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 23:08:30.122  INFO 14176 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 23:08:30.125  INFO 14176 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 23:08:30.189  INFO 14176 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 23:08:30.372  INFO 14176 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 23:08:31.444  INFO 14176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:08:32.763  INFO 14176 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:08:26 CST 2018]; root of context hierarchy
+2018-03-29 23:08:32.896  INFO 14176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 23:08:32.900  INFO 14176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 23:08:32.902  INFO 14176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 23:08:32.946  INFO 14176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:08:32.946  INFO 14176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:08:33.017  INFO 14176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:08:33.061  INFO 14176 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 23:08:33.505  INFO 14176 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.43 seconds (JVM running for 8.393)
+2018-03-29 23:08:33.983  INFO 14176 --- [main] com.demo.LoggerTest                      : [创建订单] result = com.demo.dto.OrderDTO@3181d4de
+2018-03-29 23:08:33.994  INFO 14176 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:08:26 CST 2018]; root of context hierarchy
+2018-03-29 23:08:34.010  INFO 14176 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:27:16.879  INFO 13344 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 13344 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 23:27:16.888  INFO 13344 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 23:27:16.962  INFO 13344 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:27:16 CST 2018]; root of context hierarchy
+2018-03-29 23:27:20.465  INFO 13344 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:27:20.485  INFO 13344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 23:27:20.607  INFO 13344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 23:27:20.609  INFO 13344 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 23:27:20.611  INFO 13344 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 23:27:20.664  INFO 13344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 23:27:20.822  INFO 13344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 23:27:21.838  INFO 13344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:27:23.190  INFO 13344 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:27:16 CST 2018]; root of context hierarchy
+2018-03-29 23:27:23.317  INFO 13344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 23:27:23.321  INFO 13344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 23:27:23.322  INFO 13344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 23:27:23.371  INFO 13344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:27:23.372  INFO 13344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:27:23.445  INFO 13344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:27:23.484  INFO 13344 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 23:27:23.837  INFO 13344 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.502 seconds (JVM running for 8.436)
+2018-03-29 23:27:24.295  INFO 13344 --- [main] com.demo.LoggerTest                      : [创建订单] result = com.demo.dto.OrderDTO@550c973e
+2018-03-29 23:27:24.303  INFO 13344 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:27:16 CST 2018]; root of context hierarchy
+2018-03-29 23:27:24.318  INFO 13344 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:29:59.660  INFO 26216 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 26216 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 23:29:59.663  INFO 26216 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 23:29:59.734  INFO 26216 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:29:59 CST 2018]; root of context hierarchy
+2018-03-29 23:30:02.788  INFO 26216 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:30:02.808  INFO 26216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 23:30:02.931  INFO 26216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 23:30:02.933  INFO 26216 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 23:30:02.935  INFO 26216 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 23:30:02.990  INFO 26216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 23:30:03.210  INFO 26216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 23:30:04.290  INFO 26216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:30:05.564  INFO 26216 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:29:59 CST 2018]; root of context hierarchy
+2018-03-29 23:30:05.679  INFO 26216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 23:30:05.683  INFO 26216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 23:30:05.684  INFO 26216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 23:30:05.729  INFO 26216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:30:05.729  INFO 26216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:30:05.810  INFO 26216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:30:05.854  INFO 26216 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 23:30:06.199  INFO 26216 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 6.997 seconds (JVM running for 7.946)
+2018-03-29 23:30:06.561  INFO 26216 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-29 23:30:06.818  INFO 26216 --- [main] com.demo.LoggerTest                      : [查询单个订单] result = com.demo.dto.OrderDTO@40dd552c
+2018-03-29 23:30:06.830  INFO 26216 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:29:59 CST 2018]; root of context hierarchy
+2018-03-29 23:30:06.844  INFO 26216 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:36:38.628  INFO 23004 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 23004 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 23:36:38.629  INFO 23004 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 23:36:38.704  INFO 23004 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:36:38 CST 2018]; root of context hierarchy
+2018-03-29 23:36:41.861  INFO 23004 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:36:41.883  INFO 23004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 23:36:41.995  INFO 23004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 23:36:41.997  INFO 23004 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 23:36:41.999  INFO 23004 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 23:36:42.052  INFO 23004 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 23:36:42.299  INFO 23004 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 23:36:43.359  INFO 23004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:36:44.800  INFO 23004 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:36:38 CST 2018]; root of context hierarchy
+2018-03-29 23:36:44.933  INFO 23004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 23:36:44.940  INFO 23004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 23:36:44.941  INFO 23004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 23:36:44.990  INFO 23004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:36:44.991  INFO 23004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:36:45.060  INFO 23004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:36:45.110  INFO 23004 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 23:36:45.475  INFO 23004 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.344 seconds (JVM running for 8.276)
+2018-03-29 23:36:45.810  INFO 23004 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-29 23:36:46.019  INFO 23004 --- [main] com.demo.LoggerTest                      : [查询单个订单] result = com.demo.dto.OrderDTO@33f4c769
+2018-03-29 23:36:46.030  INFO 23004 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:36:38 CST 2018]; root of context hierarchy
+2018-03-29 23:36:46.046  INFO 23004 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:49:54.248  INFO 53448 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 53448 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 23:49:54.251  INFO 53448 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 23:49:54.315  INFO 53448 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:49:54 CST 2018]; root of context hierarchy
+2018-03-29 23:49:57.877  INFO 53448 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:49:57.913  INFO 53448 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 23:49:58.068  INFO 53448 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 23:49:58.072  INFO 53448 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 23:49:58.075  INFO 53448 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 23:49:58.137  INFO 53448 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 23:49:58.299  INFO 53448 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 23:49:59.292  INFO 53448 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:50:00.587  INFO 53448 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:49:54 CST 2018]; root of context hierarchy
+2018-03-29 23:50:00.708  INFO 53448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 23:50:00.712  INFO 53448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 23:50:00.712  INFO 53448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 23:50:00.758  INFO 53448 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:50:00.759  INFO 53448 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:50:00.844  INFO 53448 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:50:00.889  INFO 53448 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 23:50:01.292  INFO 53448 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.516 seconds (JVM running for 8.466)
+2018-03-29 23:50:01.613  INFO 53448 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-29 23:50:01.800  INFO 53448 --- [main] com.demo.LoggerTest                      : [查询单个订单] result = com.demo.dto.OrderDTO@33f4c769
+2018-03-29 23:50:01.812  INFO 53448 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:49:54 CST 2018]; root of context hierarchy
+2018-03-29 23:50:01.828  INFO 53448 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:51:05.577  INFO 45436 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 45436 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-29 23:51:05.579  INFO 45436 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-29 23:51:05.650  INFO 45436 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:51:05 CST 2018]; root of context hierarchy
+2018-03-29 23:51:08.698  INFO 45436 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:51:08.718  INFO 45436 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 23:51:08.852  INFO 45436 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 23:51:08.855  INFO 45436 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 23:51:08.858  INFO 45436 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 23:51:08.931  INFO 45436 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 23:51:09.108  INFO 45436 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 23:51:10.094  INFO 45436 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 23:51:11.420  INFO 45436 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:51:05 CST 2018]; root of context hierarchy
+2018-03-29 23:51:11.538  INFO 45436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-29 23:51:11.542  INFO 45436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 23:51:11.543  INFO 45436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 23:51:11.598  INFO 45436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:51:11.598  INFO 45436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:51:11.667  INFO 45436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 23:51:11.707  INFO 45436 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-29 23:51:12.049  INFO 45436 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 6.967 seconds (JVM running for 7.907)
+2018-03-29 23:51:12.369  INFO 45436 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-29 23:51:12.548  INFO 45436 --- [main] com.demo.LoggerTest                      : [查询单个订单] result = OrderDTO [orderId=1522337244003640321, buyerName=张小伟, buyerPhone=13673676789, buyerAddress=北京海淀, buyerOpenid=1018302, orderAmount=6.40, orderStatus=0, payStatus=0, createTime=2018-03-29 23:27:24.0, updateTime=2018-03-29 23:27:24.0, OrderDetailList=[com.demo.dataobject.OrderDetail@1c6e3ff9]]
+2018-03-29 23:51:12.559  INFO 45436 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Thu Mar 29 23:51:05 CST 2018]; root of context hierarchy
+2018-03-29 23:51:12.577  INFO 45436 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:22:39.774  INFO 25216 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 25216 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-30 00:22:39.776  INFO 25216 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-30 00:22:39.847  INFO 25216 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:22:39 CST 2018]; root of context hierarchy
+2018-03-30 00:22:43.223  INFO 25216 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:22:43.242  INFO 25216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-30 00:22:43.399  INFO 25216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-30 00:22:43.401  INFO 25216 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-30 00:22:43.403  INFO 25216 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-30 00:22:43.467  INFO 25216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-30 00:22:43.639  INFO 25216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-30 00:22:44.640  INFO 25216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:22:45.935  INFO 25216 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:22:39 CST 2018]; root of context hierarchy
+2018-03-30 00:22:46.038  INFO 25216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-30 00:22:46.046  INFO 25216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 00:22:46.047  INFO 25216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 00:22:46.097  INFO 25216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:22:46.098  INFO 25216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:22:46.182  INFO 25216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:22:46.214  INFO 25216 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-30 00:22:46.574  INFO 25216 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.325 seconds (JVM running for 8.312)
+2018-03-30 00:22:46.783  INFO 25216 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-30 00:22:47.107  INFO 25216 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:22:39 CST 2018]; root of context hierarchy
+2018-03-30 00:22:47.122  INFO 25216 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:24:53.305  INFO 47352 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 47352 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-30 00:24:53.307  INFO 47352 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-30 00:24:53.370  INFO 47352 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:24:53 CST 2018]; root of context hierarchy
+2018-03-30 00:24:56.872  INFO 47352 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:24:56.899  INFO 47352 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-30 00:24:57.053  INFO 47352 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-30 00:24:57.056  INFO 47352 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-30 00:24:57.059  INFO 47352 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-30 00:24:57.114  INFO 47352 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-30 00:24:57.288  INFO 47352 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-30 00:24:58.244  INFO 47352 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:24:59.634  INFO 47352 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:24:53 CST 2018]; root of context hierarchy
+2018-03-30 00:24:59.756  INFO 47352 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-30 00:24:59.760  INFO 47352 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 00:24:59.761  INFO 47352 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 00:24:59.808  INFO 47352 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:24:59.808  INFO 47352 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:24:59.880  INFO 47352 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:24:59.921  INFO 47352 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-30 00:25:00.309  INFO 47352 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.548 seconds (JVM running for 8.62)
+2018-03-30 00:25:00.489  INFO 47352 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-30 00:25:00.798  INFO 47352 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:24:53 CST 2018]; root of context hierarchy
+2018-03-30 00:25:00.813  INFO 47352 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:25:56.066  INFO 17840 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 17840 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-30 00:25:56.072  INFO 17840 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-30 00:25:56.140  INFO 17840 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e5d9a50: startup date [Fri Mar 30 00:25:56 CST 2018]; root of context hierarchy
+2018-03-30 00:25:59.885  INFO 17840 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:25:59.906  INFO 17840 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-30 00:26:00.052  INFO 17840 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-30 00:26:00.056  INFO 17840 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-30 00:26:00.059  INFO 17840 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-30 00:26:00.140  INFO 17840 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-30 00:26:00.426  INFO 17840 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-30 00:26:01.665  INFO 17840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:26:05.770  INFO 17840 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7e5d9a50: startup date [Fri Mar 30 00:25:56 CST 2018]; root of context hierarchy
+2018-03-30 00:26:05.907  INFO 17840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-30 00:26:05.910  INFO 17840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 00:26:05.911  INFO 17840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 00:26:05.980  INFO 17840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:26:05.981  INFO 17840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:26:06.073  INFO 17840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:26:06.120  INFO 17840 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-30 00:26:06.730  INFO 17840 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 11.22 seconds (JVM running for 12.36)
+2018-03-30 00:26:17.157  INFO 17840 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-30 00:28:05.961  INFO 37216 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 37216 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-30 00:28:05.963  INFO 37216 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-30 00:28:06.039  INFO 37216 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:28:06 CST 2018]; root of context hierarchy
+2018-03-30 00:28:10.030  INFO 37216 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:28:10.049  INFO 37216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-30 00:28:10.139  INFO 37216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-30 00:28:10.141  INFO 37216 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-30 00:28:10.143  INFO 37216 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-30 00:28:10.193  INFO 37216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-30 00:28:10.363  INFO 37216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-30 00:28:11.491  INFO 37216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:28:12.834  INFO 37216 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:28:06 CST 2018]; root of context hierarchy
+2018-03-30 00:28:12.949  INFO 37216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-30 00:28:12.954  INFO 37216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 00:28:12.955  INFO 37216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 00:28:13.008  INFO 37216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:28:13.009  INFO 37216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:28:13.074  INFO 37216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:28:13.111  INFO 37216 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-30 00:28:13.428  INFO 37216 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 8.11 seconds (JVM running for 9.099)
+2018-03-30 00:28:13.635  INFO 37216 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-30 00:28:13.908  INFO 37216 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:28:06 CST 2018]; root of context hierarchy
+2018-03-30 00:28:13.919  INFO 37216 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:28:30.371  INFO 36676 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 36676 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-30 00:28:30.373  INFO 36676 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-30 00:28:30.429  INFO 36676 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:28:30 CST 2018]; root of context hierarchy
+2018-03-30 00:28:33.452  INFO 36676 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:28:33.479  INFO 36676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-30 00:28:33.598  INFO 36676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-30 00:28:33.600  INFO 36676 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-30 00:28:33.603  INFO 36676 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-30 00:28:33.672  INFO 36676 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-30 00:28:33.898  INFO 36676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-30 00:28:34.872  INFO 36676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:28:36.162  INFO 36676 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:28:30 CST 2018]; root of context hierarchy
+2018-03-30 00:28:36.265  INFO 36676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-30 00:28:36.271  INFO 36676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 00:28:36.272  INFO 36676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 00:28:36.319  INFO 36676 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:28:36.320  INFO 36676 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:28:36.392  INFO 36676 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:28:36.426  INFO 36676 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-30 00:28:36.792  INFO 36676 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 6.91 seconds (JVM running for 7.852)
+2018-03-30 00:28:36.967  INFO 36676 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-30 00:28:37.261  INFO 36676 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:28:30 CST 2018]; root of context hierarchy
+2018-03-30 00:28:37.294  INFO 36676 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:28:51.435  INFO 17284 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 17284 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-30 00:28:51.436  INFO 17284 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-30 00:28:51.527  INFO 17284 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e5d9a50: startup date [Fri Mar 30 00:28:51 CST 2018]; root of context hierarchy
+2018-03-30 00:28:55.648  INFO 17284 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:28:55.676  INFO 17284 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-30 00:28:55.827  INFO 17284 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-30 00:28:55.830  INFO 17284 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-30 00:28:55.833  INFO 17284 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-30 00:28:55.897  INFO 17284 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-30 00:28:56.200  INFO 17284 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-30 00:28:57.398  INFO 17284 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:29:00.659  INFO 17284 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7e5d9a50: startup date [Fri Mar 30 00:28:51 CST 2018]; root of context hierarchy
+2018-03-30 00:29:00.800  INFO 17284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-30 00:29:00.806  INFO 17284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 00:29:00.807  INFO 17284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 00:29:00.883  INFO 17284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:29:00.883  INFO 17284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:29:00.978  INFO 17284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:29:01.030  INFO 17284 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-30 00:29:01.651  INFO 17284 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 10.813 seconds (JVM running for 11.971)
+2018-03-30 00:29:06.450  INFO 17284 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-30 00:32:16.930  INFO 27028 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 27028 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-30 00:32:16.933  INFO 27028 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-30 00:32:17.038  INFO 27028 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e5d9a50: startup date [Fri Mar 30 00:32:17 CST 2018]; root of context hierarchy
+2018-03-30 00:32:26.802  INFO 7812 --- [main] c.d.Service.impl.OrderServiceImplTest    : Starting OrderServiceImplTest on DESKTOP-72CNDS6 with PID 7812 (started by Administrator in D:\workspace\eclipse_luna\sell)
+2018-03-30 00:32:26.803  INFO 7812 --- [main] c.d.Service.impl.OrderServiceImplTest    : No active profile set, falling back to default profiles: default
+2018-03-30 00:32:26.871  INFO 7812 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:32:26 CST 2018]; root of context hierarchy
+2018-03-30 00:32:30.383  INFO 7812 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:32:30.402  INFO 7812 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-30 00:32:30.499  INFO 7812 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-30 00:32:30.501  INFO 7812 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-30 00:32:30.503  INFO 7812 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-30 00:32:30.564  INFO 7812 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-30 00:32:30.744  INFO 7812 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-30 00:32:31.741  INFO 7812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-30 00:32:33.066  INFO 7812 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:32:26 CST 2018]; root of context hierarchy
+2018-03-30 00:32:33.177  INFO 7812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.demo.VO.ResultVO com.demo.controller.BuyerProductController.list()
+2018-03-30 00:32:33.181  INFO 7812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 00:32:33.182  INFO 7812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 00:32:33.226  INFO 7812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:32:33.227  INFO 7812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:32:33.339  INFO 7812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 00:32:33.370  INFO 7812 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-30 00:32:33.748  INFO 7812 --- [main] c.d.Service.impl.OrderServiceImplTest    : Started OrderServiceImplTest in 7.458 seconds (JVM running for 8.411)
+2018-03-30 00:32:33.894  INFO 7812 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-30 00:32:34.214  INFO 7812 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee37e5a: startup date [Fri Mar 30 00:32:26 CST 2018]; root of context hierarchy
+2018-03-30 00:32:34.224  INFO 7812 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

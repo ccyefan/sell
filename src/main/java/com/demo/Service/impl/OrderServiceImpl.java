@@ -2,26 +2,27 @@ package com.demo.Service.impl;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.text.Collator;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.demo.Service.OrderService;
 import com.demo.Service.ProductService;
+import com.demo.convertor.OrderMaster2OrderDTOConvertors;
 import com.demo.dataobject.OrderDetail;
 import com.demo.dataobject.OrderMaster;
 import com.demo.dataobject.ProductInfo;
 import com.demo.dto.CartDTO;
 import com.demo.dto.OrderDTO;
+import com.demo.enums.OrderStatusEnum;
+import com.demo.enums.PayStatusEnum;
 import com.demo.enums.ResultEnum;
 import com.demo.exception.SellException;
 import com.demo.repository.OrderDetailRepository;
@@ -61,7 +62,7 @@ public class OrderServiceImpl implements OrderService{
 		BigDecimal orderAmount = new BigDecimal(BigInteger.ZERO);
 		
 		//List<CartDTO> cartDTOList = new ArrayList<CartDTO>();
-		
+
 		//1.查询商品(数量，价格)
 		for(OrderDetail orderDetail : orderDTO.getOrderDetailList()){
 			ProductInfo productInfo = productService.findOne(orderDetail.getProductId());
@@ -69,24 +70,25 @@ public class OrderServiceImpl implements OrderService{
 				throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
 			}
 			//2.计算总价  价格 * 数量
-			orderAmount = orderDetail.getProductPrice()
+			orderAmount = productInfo.getProductPrice()
 					.multiply(new BigDecimal(orderDetail.getProductQuantity()))
 					.add(orderAmount);
 			// 订单详情入库(orderDetail)
+			BeanUtils.copyProperties(productInfo, orderDetail);
 			orderDetail.setDetailId(KeyUtil.genUniqueKey());
 			orderDetail.setOrderId(orderId);
-			BeanUtils.copyProperties(productInfo, orderDetail);
 			orderDetailRepository.save(orderDetail);
 			//CartDTO cartDTO = new CartDTO(orderDetail.getOrderId(),orderDetail.getProductQuantity());
 			//cartDTOList.add(cartDTO);
 		}
 		//3.写入订单数据库(orderMaster)
 		OrderMaster orderMaster = new OrderMaster();
+		BeanUtils.copyProperties(orderDTO, orderMaster);
 		orderMaster.setOrderId(orderId);
 		orderMaster.setOrderAmount(orderAmount);
-		BeanUtils.copyProperties(orderDTO, orderMaster);
+		orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
+		orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
 		orderMasterRepository.save(orderMaster);
-		
 		//4.扣库存
 		List<CartDTO> cartDTOList = orderDTO.getOrderDetailList().stream().map(e ->
 			new CartDTO(e.getProductId(),e.getProductQuantity())
@@ -117,8 +119,13 @@ public class OrderServiceImpl implements OrderService{
 
 	@Override
 	public Page<OrderDTO> findList(String buyerOpenid, Pageable pageable) {
-		// TODO Auto-generated method stub
-		return null;
+		Page<OrderMaster> orderMasterPage = orderMasterRepository.findByBuyerOpenid(buyerOpenid, pageable);
+		
+		List<OrderDTO> orderDTOList = OrderMaster2OrderDTOConvertors.convert(orderMasterPage.getContent());
+		
+		Page<OrderDTO> orderDTO = new PageImpl<OrderDTO>(orderDTOList, pageable, orderMasterPage.getTotalElements());
+		
+		return orderDTO;
 	}
 
 	@Override
