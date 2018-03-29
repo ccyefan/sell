@@ -12,5 +12,8 @@ public interface ProductCategoryRepository extends JpaRepository<ProductCategory
 	 * @param categoryType
 	 * @return
 	 */
+
+	// In findByAgeIn(Collection<Age> ages) … where x.age in ?1
+
 	List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryType);
 }

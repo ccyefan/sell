@@ -49,7 +49,12 @@ public class BuyerProductController {
 				.map(e -> e.getCategoryType())
 				.collect(Collectors.toList());
 		List<ProductCategory> productCategoryList = categoryService.findByCategoryTypeIn(categoryTypes);
-		//3.拼装
+		//3.拼装   
+		/**
+		 * 1.如果for中循环多次执行sql，高并发中效率低下，所以一次性查询出来，在内存中拼装
+		 * 2.有些字段必须隐藏，重新筛选字段
+		 * 3.hibernite 一对多关系注解  创建对象时候就已经加载了
+		 */
 		List<ProductVO> productVOList = new ArrayList<ProductVO>();
 		for(ProductCategory productCategory : productCategoryList){
 			ProductVO productVO = new ProductVO();
