@@ -1,9 +1,9 @@
 # 微信点餐
 
- ![image](https://github.com/ccyefan/sell/doc/img/功能.png)
- ![image](https://github.com/ccyefan/sell/doc/img/表模型.png)
- ![image](https://github.com/ccyefan/sell/doc/img/表关系.png)
- ![image](https://github.com/ccyefan/sell/doc/img/关系图.png)
+ ![image](https://github.com/ccyefan/sell/blob/master/doc/img/功能.png)
+ ![image](https://github.com/ccyefan/sell/blob/master/doc/img/表模型.png)
+ ![image](https://github.com/ccyefan/sell/blob/master/doc/img/表关系.png)
+ ![image](https://github.com/ccyefan/sell/blob/master/doc/img/关系图.png)
 
 * yml文件在eclipse中无效，还未找到解决方法，暂时用properties代替
 * ddl-auto=create 会清空数据重新生成
