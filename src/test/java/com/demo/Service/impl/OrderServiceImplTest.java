@@ -20,6 +20,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.demo.LoggerTest;
 import com.demo.dataobject.OrderDetail;
 import com.demo.dto.OrderDTO;
+import com.demo.enums.OrderStatusEnum;
+import com.demo.enums.PayStatusEnum;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -30,12 +32,12 @@ public class OrderServiceImplTest {
 	
 	private final String BYER_OPENID = "1018302";
 	
-	private final String ORDER_ID = "1234567";
+	private final String ORDER_ID = "1522380819195563356";
 	
 	@Autowired
 	private OrderServiceImpl orderServiceImpl;
 	
-	//@Test
+//	@Test
 	public void create(){
 		OrderDTO orderDTO = new OrderDTO();
 		orderDTO.setBuyerName("张小伟");
@@ -45,7 +47,7 @@ public class OrderServiceImplTest {
 		
 		List<OrderDetail> orderDetailList = new ArrayList<OrderDetail>();
 		OrderDetail orderDetail = new OrderDetail();
-		orderDetail.setProductId("1234567");
+		orderDetail.setProductId("123456");
 		orderDetail.setProductQuantity(2);
 		orderDetail.setProductPrice(new BigDecimal(4.6));
 		
@@ -63,11 +65,31 @@ public class OrderServiceImplTest {
 		Assert.assertEquals(ORDER_ID, result.getOrderId());
 	}
 	
-	@Test
+//	@Test
 	public void findList(){
 		PageRequest pageRequest = new PageRequest(0, 2);
 		Page<OrderDTO> OrderDTOPage = orderServiceImpl.findList(BYER_OPENID, pageRequest);
 		Assert.assertNotEquals(0, OrderDTOPage.getTotalElements());
 	}
 	
+//	@Test
+	public void cancle(){
+		OrderDTO orderDTO = orderServiceImpl.findOne(ORDER_ID);
+		OrderDTO result = orderServiceImpl.cancle(orderDTO);
+		Assert.assertEquals(OrderStatusEnum.CANCEL.getCode(), orderDTO.getOrderStatus());
+	}
+	
+//	@Test
+	public void finish(){
+		OrderDTO orderDTO = orderServiceImpl.findOne(ORDER_ID);
+		OrderDTO result = orderServiceImpl.finish(orderDTO);
+		Assert.assertEquals(OrderStatusEnum.FINISHED.getCode(), orderDTO.getOrderStatus());
+	}
+	
+	@Test
+	public void paid(){
+		OrderDTO orderDTO = orderServiceImpl.findOne(ORDER_ID);
+		OrderDTO result = orderServiceImpl.paid(orderDTO);
+		Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(), orderDTO.getPayStatus());
+	}
 }
