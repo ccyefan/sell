@@ -1,6 +1,9 @@
 package com.demo.enums;
 
 public enum ResultEnum {
+	
+	PARAME_ERROR(1,"请求参数错误"),
+	
 	PRODUCT_NOT_EXIST(10,"商品不存在"),
 	
 	PRODUCT_STOCK_ERROR(11,"商品库存不存在"),

@@ -1,9 +1,9 @@
 # 微信点餐
 
  ![image](https://github.com/ccyefan/sell/blob/master/doc/img/功能.png)
- ![image](https://github.com/ccyefan/sell/blob/master/doc/img/表模型.png)
- ![image](https://github.com/ccyefan/sell/blob/master/doc/img/表关系.png)
  ![image](https://github.com/ccyefan/sell/blob/master/doc/img/关系图.png)
+ ![image](https://github.com/ccyefan/sell/blob/master/doc/img/表关系.png)
+ ![image](https://github.com/ccyefan/sell/blob/master/doc/img/表模型.png)
 
 * yml文件在eclipse中无效，还未找到解决方法，暂时用properties代替
 * ddl-auto=create 会清空数据重新生成
@@ -16,5 +16,5 @@
 * 无法做到 模块化 系统构建 ？学习方法有点问题，需要画个 流程图，总结才是最重要的
 * 商品列表展示 功能模块  GET /sell/buyer/product/list 两张表一次性查询出来以后做拼装
 * 创建订单 功能模块   扣库存 多线程并发时会出现同时扣库存，也叫超库存用redis的锁来避免
-* spring boot 表单验证
+* spring boot 表单验证  BindingResult类
 
