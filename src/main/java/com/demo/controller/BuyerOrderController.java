@@ -74,8 +74,9 @@ public class BuyerOrderController {
 		}
 		Pageable pageable = new PageRequest(page, size);
 		Page<OrderDTO> orderpage = orderService.findList(openid, pageable);
-		
-		return ResultVOUtil.success(orderpage.getContent());
+		// data -> Long
+		return ResultVOUtil.success();
+		// orderpage.getContent()
 	}
 	//订单详情
 	

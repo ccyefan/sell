@@ -4,14 +4,13 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.Id;
-
 import com.demo.dataobject.OrderDetail;
-import com.demo.enums.OrderStatusEnum;
-import com.demo.enums.PayStatusEnum;
-
+import com.demo.utils.serializer.Date2LongSerializer;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+@JsonInclude(Include.NON_NULL)
 public class OrderDTO {
-	
 	private String orderId;
 	/**买家名字 */
 	private String buyerName;
@@ -28,8 +27,10 @@ public class OrderDTO {
 	/**支付状态， 默认为0未支付*/
 	private Integer payStatus ;
 	/**创建时间 */
+	@JsonSerialize(using = Date2LongSerializer.class)
 	private Date createTime;
 	/**修改时间 */
+	@JsonSerialize(using = Date2LongSerializer.class)
 	private Date updateTime;
 	
 	private List<OrderDetail> OrderDetailList;

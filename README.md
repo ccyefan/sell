@@ -21,4 +21,5 @@
 		Content-Type: application/x-www-form-urlencoded
 		name=张三&phone=18868822111&address=慕课网总部&openid=ew3euwhd7sjw9diwkq&items=[{     productId: 123456,     productQuantity: 2 }]
 * 查询订单，http://127.0.0.1:8080/sell/buyer/order/list?openid=1018302
+* 对象 -> json 数据篡改(@jsonSerialize(继承Serialization重写其方法))   date -> Long 除以1000
 

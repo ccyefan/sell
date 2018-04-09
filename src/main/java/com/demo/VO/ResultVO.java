@@ -1,10 +1,15 @@
 package com.demo.VO;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 /**
  * 
  * @author Administrator
  * @param <T>
  *
  */
+@JsonInclude(Include.NON_NULL)
 public class ResultVO<T> {
 	/**错误码 */
 	private String msg;
