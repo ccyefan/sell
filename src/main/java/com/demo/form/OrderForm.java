@@ -26,22 +26,18 @@ public class OrderForm {
 	/**
 	 * 卖家微信openId
 	 */
-	@NotEmpty(message ="openId必填")
-	private String openId;
+	@NotEmpty(message ="openid必填")
+	private String openid;
 	/**
 	 * 购物车
 	 */
 	@NotEmpty(message = "购物车不能为空")
 	private String items;
-	public OrderForm(String name, String phone, String address, String openId,
-			String items) {
+	
+	public OrderForm() {
 		super();
-		this.name = name;
-		this.phone = phone;
-		this.address = address;
-		this.openId = openId;
-		this.items = items;
 	}
+
 	public String getName() {
 		return name;
 	}
@@ -60,11 +56,11 @@ public class OrderForm {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getOpenId() {
-		return openId;
+	public String getOpenid() {
+		return openid;
 	}
-	public void setOpenId(String openId) {
-		this.openId = openId;
+	public void setOpenid(String openid) {
+		this.openid = openid;
 	}
 	public String getItems() {
 		return items;

@@ -17,4 +17,7 @@
 * 商品列表展示 功能模块  GET /sell/buyer/product/list 两张表一次性查询出来以后做拼装
 * 创建订单 功能模块   扣库存 多线程并发时会出现同时扣库存，也叫超库存用redis的锁来避免
 * spring boot 表单验证  BindingResult类
+* 创建订单，http://127.0.0.1:8080/sell/buyer/order/create  post
+		Content-Type: application/x-www-form-urlencoded
+		name=张三&phone="18868822111"&address="慕课网总部"&openid="ew3euwhd7sjw9diwkq"&items=[{     productId: "123456",     productQuantity: 2 }]
 
