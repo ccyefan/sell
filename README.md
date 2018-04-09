@@ -19,5 +19,6 @@
 * spring boot 表单验证  BindingResult类
 * 创建订单，http://127.0.0.1:8080/sell/buyer/order/create  post
 		Content-Type: application/x-www-form-urlencoded
-		name=张三&phone="18868822111"&address="慕课网总部"&openid="ew3euwhd7sjw9diwkq"&items=[{     productId: "123456",     productQuantity: 2 }]
+		name=张三&phone=18868822111&address=慕课网总部&openid=ew3euwhd7sjw9diwkq&items=[{     productId: 123456,     productQuantity: 2 }]
+* 查询订单，http://127.0.0.1:8080/sell/buyer/order/list?openid=1018302
 

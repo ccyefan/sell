@@ -1,21 +1,25 @@
 package com.demo.controller;
 
-import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import lombok.extern.slf4j.Slf4j;
 
-import org.mockito.internal.util.collections.ListUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.Service.OrderService;
@@ -38,8 +42,8 @@ public class BuyerOrderController {
 	private OrderService orderService;
 	
 	//创建订单
-//	@RequestMapping(path = "/create",method = RequestMethod.POST)
-	@PostMapping("/create")
+	@RequestMapping(path = "/create",method = RequestMethod.POST)
+//	@PostMapping("/create")
 	public ResultVO<Map<String,String>> create(@Validated OrderForm orderForm,
 												BindingResult bindingResult){
 		if(bindingResult.hasErrors()){
@@ -60,7 +64,19 @@ public class BuyerOrderController {
 		return ResultVOUtil.success(map);
 	}
 	//订单列表
-	
+	@GetMapping("/list")
+	public ResultVO<List<OrderDTO>> list(@RequestParam(value= "openid") String openid,
+											@RequestParam(value = "page",defaultValue = "0") Integer page,
+											@RequestParam(value = "size",defaultValue = "10") Integer size){
+		if(StringUtils.isEmpty(openid)){
+			logger.error("[查询订单列表] openid为空");
+			throw new SellException(ResultEnum.PARAME_ERROR);
+		}
+		Pageable pageable = new PageRequest(page, size);
+		Page<OrderDTO> orderpage = orderService.findList(openid, pageable);
+		
+		return ResultVOUtil.success(orderpage.getContent());
+	}
 	//订单详情
 	
 	//取消订单
