@@ -1,6 +1,7 @@
 package com.demo.dto;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -33,7 +34,7 @@ public class OrderDTO {
 	@JsonSerialize(using = Date2LongSerializer.class)
 	private Date updateTime;
 	
-	private List<OrderDetail> OrderDetailList;
+	private List<OrderDetail> OrderDetailList = new ArrayList<>();
 	
 	@Override
 	public String toString() {

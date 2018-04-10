@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
  * @param <T>
  *
  */
-@JsonInclude(Include.NON_NULL)
+//@JsonInclude(Include.NON_NULL)
 public class ResultVO<T> {
 	/**错误码 */
 	private String msg;

@@ -17,6 +17,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -25,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.demo.Service.OrderService;
 import com.demo.VO.ResultVO;
 import com.demo.convertor.OrderForm2OrderDTOConverter;
+import com.demo.dataobject.OrderDetail;
 import com.demo.dto.OrderDTO;
 import com.demo.enums.ResultEnum;
 import com.demo.exception.SellException;
@@ -75,10 +77,28 @@ public class BuyerOrderController {
 		Pageable pageable = new PageRequest(page, size);
 		Page<OrderDTO> orderpage = orderService.findList(openid, pageable);
 		// data -> Long
-		return ResultVOUtil.success();
-		// orderpage.getContent()
+		return ResultVOUtil.success(orderpage.getContent());
+		/*ResultVO resultVO = new ResultVO();
+		resultVO.setCode(0);
+		resultVO.setMsg("");
+		return resultVO;*/
 	}
 	//订单详情
-	
+	@GetMapping("/detail")
+	public ResultVO<OrderDTO> detail(@RequestParam(value = "openid") String opendid,
+									 @RequestParam(value = "orderid") String orderid){
+		OrderDTO orderDTO = orderService.findOne(orderid);
+		
+		return ResultVOUtil.success(orderDTO);
+	}
 	//取消订单
+	@PostMapping("/cancle")
+	public ResultVO cancle(@RequestParam(value = "openid") String openid,
+							@RequestParam(value = "orderid") String orderid){
+		OrderDTO orderDTO = orderService.findOne(orderid);
+		orderService.cancle(orderDTO);
+		
+		return ResultVOUtil.success();
+		
+	}
 }
