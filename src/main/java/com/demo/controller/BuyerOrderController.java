@@ -23,10 +23,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.demo.Service.BuyerService;
 import com.demo.Service.OrderService;
 import com.demo.VO.ResultVO;
 import com.demo.convertor.OrderForm2OrderDTOConverter;
-import com.demo.dataobject.OrderDetail;
 import com.demo.dto.OrderDTO;
 import com.demo.enums.ResultEnum;
 import com.demo.exception.SellException;
@@ -42,6 +42,9 @@ public class BuyerOrderController {
 	
 	@Autowired
 	private OrderService orderService;
+	
+	@Autowired
+	private BuyerService buyerService;
 	
 	//创建订单
 	@RequestMapping(path = "/create",method = RequestMethod.POST)
@@ -85,9 +88,11 @@ public class BuyerOrderController {
 	}
 	//订单详情
 	@GetMapping("/detail")
-	public ResultVO<OrderDTO> detail(@RequestParam(value = "openid") String opendid,
+	public ResultVO<OrderDTO> detail(@RequestParam(value = "openid") String openid,
 									 @RequestParam(value = "orderid") String orderid){
-		OrderDTO orderDTO = orderService.findOne(orderid);
+		//OrderDTO orderDTO = orderService.findOne(orderid);
+		
+		OrderDTO orderDTO = buyerService.findOne(openid,orderid);
 		
 		return ResultVOUtil.success(orderDTO);
 	}
@@ -95,8 +100,10 @@ public class BuyerOrderController {
 	@PostMapping("/cancle")
 	public ResultVO cancle(@RequestParam(value = "openid") String openid,
 							@RequestParam(value = "orderid") String orderid){
-		OrderDTO orderDTO = orderService.findOne(orderid);
-		orderService.cancle(orderDTO);
+		//OrderDTO orderDTO = orderService.findOne(orderid);
+		//orderService.cancle(orderDTO);
+		
+		buyerService.cancle(openid, orderid);
 		
 		return ResultVOUtil.success();
 		
