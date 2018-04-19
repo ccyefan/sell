@@ -86,10 +86,18 @@ public class OrderServiceImplTest {
 		Assert.assertEquals(OrderStatusEnum.FINISHED.getCode(), orderDTO.getOrderStatus());
 	}
 	
-	@Test
+	//@Test
 	public void paid(){
 		OrderDTO orderDTO = orderServiceImpl.findOne(ORDER_ID);
 		OrderDTO result = orderServiceImpl.paid(orderDTO);
 		Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(), orderDTO.getPayStatus());
+	}
+	
+	@Test
+	public void list(){
+		PageRequest request = new PageRequest(0, 2);
+		Page<OrderDTO> orderDTOPage = orderServiceImpl.findList(request);
+//		Assert.assertNotEquals(0, orderDTOPage.getTotalElements());	
+		Assert.assertTrue("查询所有的订单", orderDTOPage.getTotalElements() < 0);
 	}
 }
