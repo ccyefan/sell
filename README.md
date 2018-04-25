@@ -28,3 +28,10 @@
 	http://127.0.0.1:8080/sell/buyer/order/cancle	post
 	Content-Type: application/x-www-form-urlencoded 
 	openid=1018302&orderid=1523285181616248964
+* 微信授权和支付 代码省略  返工时候再看
+* 订单后端页面
+	FreeMarker 
+	
+			
+	
+
