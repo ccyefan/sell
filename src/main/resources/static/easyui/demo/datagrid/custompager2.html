@@ -49,9 +49,10 @@
 		Date From: <input class="easyui-datebox" style="width:80px">
 		To: <input class="easyui-datebox" style="width:80px">
 		Language: 
-		<input class="easyui-combobox" style="width:100px"
-				url="data/combobox_data.json"
-				valueField="id" textField="text">
+		<input id="combobox" class="easyui-combobox" style="width:100px"
+				>
+				<!-- url="data/combobox_data.json"
+				valueField="id" textField="text"> -->
 		<a href="#" class="easyui-linkbutton" iconCls="icon-search">Search</a>
 	</div>
 </div>	
@@ -62,14 +63,32 @@
 				productid: $('#productid').val()
 			});
 		}
+		//var page = $('#dg').datagrid('getPager').pagination('options').pageNumber;
 		$(function(){
+			
+			$('#combobox').combobox({
+					url:"./combobox_data.json",method:'get',
+					valueField:"id",
+					textField:"text",
+					loadFilter:function(data){
+						data.push({"id":6,"text":"text6","selected":true});
+						return data;
+					}
+			});
+
 			var pager = $('#dg').datagrid({
 				rownumbers:true,singleSelect:true,pagination:true,method:'get',
 				url:'../../../order',
 				pageSize: 3 ,
 				pageList:[3,20,30,40,50],
+				onSelectPage:function(pageNumber, pageSize){
+					$(this).pagination('loading');
+					alert('pageNumber:'+pageNumber+',pageSize:'+pageSize);
+					$(this).pagination('loaded');
+				},
 				queryParams: {
-					size: '3',
+					size:3,
+					//page:2,
 					subject: 'datagrid'
 				},
 				loadFilter: function(data){
@@ -78,7 +97,7 @@
 						data2.rows=data._embedded.order;
 						data2.total=data.page.totalElements;
 						//data.rows=data._embedded.order;
-						//data.total = data.page.totalElements;
+						//data.total = data.page.totalElements;	
 						return data2;
 					} else {
 						return data;
@@ -89,17 +108,25 @@
 			        {field:'productId',title:'Name',width:100},
 			        {field:'productName',title:'Price',width:100,align:'right'}
 			    ]]
-			});	
-			//.datagrid('getPager')// get the pager of datagrid
+			}).datagrid('getPager');
+			//
+			// get the pager of datagrid
 			
-	/* 		pager.pagination({
+			$('#dg').datagrid("load",{"a":"b"});
+			
+			
+			
+	 		/* pager.pagination({
 			    total:2000,
-			    pageSize:10,
+			    pageSize:3,
 				onSelectPage:function(pageNumber, pageSize){
 					//$("#dg").panel('refresh', 'order?page='+pageNumber+'&size='+pageSize);
-					//$(this).pagination('loading');
 					alert('pageNumber:'+pageNumber+',pageSize:'+pageSize);
+					//$('#dg').datagrid('reload');
+					//$('#dg').datagrid('reload',{"a":"b"})
+					//$(this).pagination('loading');
 					//$(this).pagination('loaded');
+					//$(this)
 				},
 				buttons:[{
 					iconCls:'icon-search',
@@ -117,12 +144,12 @@
 						alert('edit');
 					}
 				}]
-			});		 */	
+			}); */
 		})
 		
 		
 	//分页功能      
-	function pagerFilter(data) {  
+	/* function pagerFilter(data) {  
 	    if (typeof data.length == 'number' && typeof data.splice == 'function') {  
 	        data = {  
 	            total: data.length,  
@@ -155,7 +182,7 @@
 	    var end = start + parseInt(opts.pageSize);  
 	    data.rows = (data.originalRows.slice(start, end));  
 	    return data;  
-	}  		
+	}  		 */
 	</script>
 </body>
 </html>
