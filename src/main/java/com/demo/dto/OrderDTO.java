@@ -6,7 +6,11 @@ import java.util.Date;
 import java.util.List;
 
 import com.demo.dataobject.OrderDetail;
+import com.demo.enums.OrderStatusEnum;
+import com.demo.enums.PayStatusEnum;
+import com.demo.utils.EnumUtils;
 import com.demo.utils.serializer.Date2LongSerializer;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -35,6 +39,14 @@ public class OrderDTO {
 	private Date updateTime;
 	
 	private List<OrderDetail> OrderDetailList = new ArrayList<>();
+	@JsonIgnore
+	public OrderStatusEnum getOrderStatusEnum(){
+		return EnumUtils.getByCode(orderStatus, OrderStatusEnum.class);
+	}
+	@JsonIgnore
+	public PayStatusEnum getPayStatusEnum(){
+		return EnumUtils.getByCode(payStatus, PayStatusEnum.class);
+	}
 	
 	@Override
 	public String toString() {

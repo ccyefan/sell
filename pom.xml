@@ -10,9 +10,9 @@
   <description>sell</description>
 
   <!-- mvn java版本的第二种解决方式 -->
-  <!-- <properties>
+  <properties>
     <java.version>1.8</java.version>
-  </properties> -->
+  </properties>
 
   <parent>
   	<groupId>org.springframework.boot</groupId>
