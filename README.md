@@ -30,7 +30,8 @@
 	openid=1018302&orderid=1523285181616248964
 * 微信授权和支付 代码省略  返工时候再看
 * 订单后端页面
-	FreeMarker 
+	FreeMarker 遍历集合，根据code获取枚举，分页
+	
 	
 			
 	

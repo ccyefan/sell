@@ -19,7 +19,7 @@ import com.demo.dto.OrderDTO;
 public class SellerOrderController {
 
 	@Autowired
-	OrderService orderService;
+	private OrderService orderService;
 	/**
 	 * 
 	 * @param page
@@ -33,6 +33,8 @@ public class SellerOrderController {
 		PageRequest pageable = new PageRequest(page - 1, size);
 		Page<OrderDTO> orderDTOPage = orderService.findList(pageable);
 		map.put("orderDTOPage", orderDTOPage);	
+		map.put("currentPage", page);
+		map.put("size", size);
 		return new ModelAndView("order/list", map);
 	}
 }
