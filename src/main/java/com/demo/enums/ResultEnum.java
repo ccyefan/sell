@@ -2,6 +2,8 @@ package com.demo.enums;
 
 public enum ResultEnum {
 	
+	SUCCESS(0,"订单查询成功"),
+	
 	PARAME_ERROR(1,"请求参数错误"),
 	
 	PRODUCT_NOT_EXIST(10,"商品不存在"),
@@ -21,6 +23,8 @@ public enum ResultEnum {
 	ORDER_PAY_STATUS_ERROR(17,"订单支付状态错误"),
 	
 	ORDER_OWNER_ERROR(18,"该订单不属于当前用户"),
+	
+	ORDER_CANCLE_SUCCESS(22,"订单 取消成功")
 	;
 	
 	private Integer code;

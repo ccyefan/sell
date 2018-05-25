@@ -2,6 +2,10 @@ package com.demo.controller;
 
 import java.util.Map;
 
+import lombok.extern.slf4j.Slf4j;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -13,10 +17,13 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.demo.Service.OrderService;
 import com.demo.dto.OrderDTO;
+import com.demo.enums.ResultEnum;
 
 @Controller
 @RequestMapping("/seller/order")
+@Slf4j
 public class SellerOrderController {
+	private Logger logger = LoggerFactory.getLogger(SellerOrderController.class);
 
 	@Autowired
 	private OrderService orderService;
@@ -36,5 +43,27 @@ public class SellerOrderController {
 		map.put("currentPage", page);
 		map.put("size", size);
 		return new ModelAndView("order/list", map);
+	}
+	
+	/**
+	 * 取消订单
+	 * @param orderId
+	 * @return
+	 */
+	@GetMapping("/cancle")
+	public ModelAndView cancle(@RequestParam("orderId") String orderId,
+								Map<String,Object> map){
+		try{
+			OrderDTO orderDTO = orderService.findOne(orderId);
+			orderService.cancle(orderDTO);
+		}catch(Exception e){
+			logger.error("[取消订单] 发生错误 {}",e);
+			map.put("msg", ResultEnum.ORDER_NOT_EXIST.getMessage());
+			map.put("url", "/sell/seller/order/list");
+			return new ModelAndView("common/error",map);
+		}
+		map.put("msg", ResultEnum.ORDER_CANCLE_SUCCESS.getMessage());
+		map.put("url", "/sell/seller/order/list");
+		return new ModelAndView("common/success");
 	}
 }
