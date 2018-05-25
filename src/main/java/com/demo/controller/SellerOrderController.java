@@ -18,6 +18,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.demo.Service.OrderService;
 import com.demo.dto.OrderDTO;
 import com.demo.enums.ResultEnum;
+import com.demo.exception.SellException;
 
 @Controller
 @RequestMapping("/seller/order")
@@ -56,7 +57,7 @@ public class SellerOrderController {
 		try{
 			OrderDTO orderDTO = orderService.findOne(orderId);
 			orderService.cancle(orderDTO);
-		}catch(Exception e){
+		}catch(SellException e){
 			logger.error("[取消订单] 发生错误 {}",e);
 			map.put("msg", ResultEnum.ORDER_NOT_EXIST.getMessage());
 			map.put("url", "/sell/seller/order/list");
@@ -65,5 +66,20 @@ public class SellerOrderController {
 		map.put("msg", ResultEnum.ORDER_CANCLE_SUCCESS.getMessage());
 		map.put("url", "/sell/seller/order/list");
 		return new ModelAndView("common/success");
+	}
+	
+	@GetMapping("/detail")
+	public ModelAndView detail(@RequestParam("orderId") String orderId,
+								Map<String,Object> map){
+		try{
+			OrderDTO orderDTO = orderService.findOne(orderId);
+			map.put("orderDTO", orderDTO);
+		}catch(SellException e){
+			logger.error("[卖家端查询订单] 发生错误 {}",e);
+			map.put("msg", ResultEnum.ORDER_NOT_EXIST.getMessage());
+			map.put("url", "/sell/seller/order/list");
+			return new ModelAndView("common/error",map);
+		}
+		return new ModelAndView("common/detail",map);
 	}
 }
