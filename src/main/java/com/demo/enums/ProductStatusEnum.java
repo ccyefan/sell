@@ -4,7 +4,7 @@ package com.demo.enums;
  * @author Administrator
  *
  */
-public enum ProductStatusEnum {
+public enum ProductStatusEnum implements CodeEnum{
 	UP(0,"在架"),
 	DOWN(1,"下架");
 	

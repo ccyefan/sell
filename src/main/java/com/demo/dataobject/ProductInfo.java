@@ -1,9 +1,16 @@
 package com.demo.dataobject;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+
+import org.hibernate.annotations.DynamicUpdate;
+
+import com.demo.enums.ProductStatusEnum;
+import com.demo.utils.EnumUtils;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * 
@@ -12,6 +19,7 @@ import javax.persistence.Id;
  */
 
 @Entity
+@DynamicUpdate
 public class ProductInfo {
 
 	/**产品Id */
@@ -34,11 +42,22 @@ public class ProductInfo {
 	private String productIcon;
 	
 	/**状态  0:正常  1:下架*/
-	private Integer productStatus;
+	private Integer productStatus = ProductStatusEnum.UP.getCode();
 	
 	/**类目编号 */
 	private Integer categoryType;
-
+	
+	/**创建时间 */
+	private Date createTime;
+	
+	/**修改时间 */
+	private Date updateTime;
+	
+	@JsonIgnore
+	public	ProductStatusEnum getProductStatusEnum(){
+		return EnumUtils.getByCode(productStatus, ProductStatusEnum.class);
+	}
+	
 	public String getProductId() {
 		return productId;
 	}
@@ -101,6 +120,22 @@ public class ProductInfo {
 
 	public void setCategoryType(Integer categoryType) {
 		this.categoryType = categoryType;
+	}
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public Date getUpdateTime() {
+		return updateTime;
+	}
+
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
 	}
 
 }

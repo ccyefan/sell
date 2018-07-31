@@ -46,7 +46,7 @@ public class ProductServiceImplTest {
 		Assert.assertNotEquals(0, list.getSize());
 	}
 	
-	@Test
+	//@Test
 	public void save(){
 		ProductInfo productInfo = new ProductInfo();
 		productInfo.setProductId("1234567");
@@ -59,5 +59,15 @@ public class ProductServiceImplTest {
 		productInfo.setCategoryType(2);		
 		ProductInfo result = productServiceImpl.save(productInfo);
 		Assert.assertNotNull(result);
+	}
+	//@Test
+	public void onSaleTest(){
+		ProductInfo productInfo = productServiceImpl.onSale("123456");
+		Assert.assertEquals(productInfo.getProductStatus(), ProductStatusEnum.UP.getCode());
+	}
+	@Test
+	public void offSaleTest(){
+		ProductInfo productInfo = productServiceImpl.offSale("123456");
+		Assert.assertEquals(productInfo.getProductStatus(), ProductStatusEnum.DOWN.getCode());
 	}
 }
