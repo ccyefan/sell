@@ -16,7 +16,8 @@ VirtualBox-5.1.22
 * 路径 /usr/local/nginx
 * 启动 nginx
 * 重启 nginx -s reload
-
+* 反向代理  修改配置 nginx/conf/nginx.conf  ip是宿主机器的ip
+  192.168.1.105:80/#/order 空页面下添加 cookie,document.cookie='openid=abc123' 则可以连调试
 ##### mysql
 * 配置 /etc/my.conf
 * 账号 root
