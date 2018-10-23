@@ -69,12 +69,12 @@ public class ProductCategory {
 		this.categoryName = categoryName;
 	}
 
-	public Integer getCategoryType() {
-		return categoryType;
-	}
-
 	public void setCategoryType(Integer categoryType) {
 		this.categoryType = categoryType;
+	}
+
+	public Integer getCategoryType() {
+		return categoryType;
 	}
 
 	public Date getCreateTime() {

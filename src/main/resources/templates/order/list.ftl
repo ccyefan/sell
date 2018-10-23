@@ -3,7 +3,7 @@
 <#include "../common/header.ftl">
 
 <body>
-<!-- <h1>${orderDTOPage.totalPages}</h1>
+<#-- <h1>${orderDTOPage.totalPages}</h1>
 <h1>${orderDTOPage.getTotalPages()}</h1> -->
 
 <div id="wrapper" class="toggled">

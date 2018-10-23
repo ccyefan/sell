@@ -33,8 +33,14 @@
 	FreeMarker 遍历集合，根据code获取枚举，分页
 * 卖家取消订单    ftl 跳转成功，错误页面，判断字段
 
-	
-	
-			
-	
-
+* 部署 tomcat ,jar  两种方式
+    打包jar
+  mvn clean package -Dmaven.test.skip=true
+    运行jar	
+  javar -jar (-Dserver.port=8090) (-Dspring.profiles.active=prod) sell.jar	
+   部署路径：/opt/javaapp/
+   后台运行： nohup ......  > tem.txt &
+   调回前台: jobs 然后  fg 1 
+   后台停止进程：ps -ef|grep sell  然后   kill -9 进程号
+   用端口查看进程号：netstat -nlp | grep :9090
+  

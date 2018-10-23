@@ -3,7 +3,7 @@
 <#include "../common/header.ftl">
 
 <body>
-<!-- <h1>${productInfoPage.totalPages}</h1>
+<#-- <h1>${productInfoPage.totalPages}</h1>
 <h1>${productInfoPage.getTotalPages()}</h1> -->
 
 <div id="wrapper" class="toggled">
